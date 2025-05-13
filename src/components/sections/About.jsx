@@ -49,8 +49,7 @@ export const About = () => {
                   University
                 </li>
                 <li>
-                  Relevant Courslearning: Data Structures, Web
-                  Development,marketing
+                  Relevant Courslearning:ALX trainee, Data Structures ,marketing
                 </li>
               </ul>
             </div>

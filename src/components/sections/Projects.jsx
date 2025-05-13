@@ -10,11 +10,16 @@ export const Projects = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
-            Under development Projects
+            On Progress Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">Babul kheyr NGO</h3>
+              <img
+                src="/babul.jpg"
+                alt="Babul Kheyr NGO"
+                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg mb-6"
+              />
               <p className="text-gray-400 mb-4">
                 Designed and developed a user-friendly platform for a charitable
                 organization in Addis Ababa, focusing on accessibility and
@@ -34,16 +39,8 @@ export const Projects = () => {
                   </span>
                 ))}
               </div>
-
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
             </div>
+
             <div
               className="
               glass p-6 rounded-xl border border-white/10
@@ -53,11 +50,20 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">Portfolio Site</h3>
+              <img
+                src="/portfolio.jpg"
+                alt="Porrtfolio"
+                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg mb-6"
+              />
               <p className="text-gray-400 mb-4">
-                A modern, responsive portfolio built to showcase my projects,
-                skills, and personality. Designed with smooth animations, clean
-                layout, and mobile-first responsiveness. Optional tech stack
-                line:
+                A modern, responsive portfolio designed to showcase my projects,
+                skills, and personality. The portfolio features a clean and
+                intuitive layout with smooth animations, ensuring a seamless
+                user experience across devices. It’s built with a mobile-first
+                approach to guarantee optimal viewing on all screen sizes, from
+                desktop to mobile. This project highlights my ability to create
+                visually appealing and functional web applications, with a focus
+                on user experience and modern design principles.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "Tailwind", "javascript", "HTML"].map(
@@ -77,14 +83,6 @@ export const Projects = () => {
                   )
                 )}
               </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
             </div>
 
             <div
@@ -96,9 +94,20 @@ export const Projects = () => {
             "
             >
               <h3 className="text-xl font-bold mb-2">E-Commerce Web App</h3>
+              <img
+                src="/ecommerce.jpg"
+                alt="ecommerce"
+                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg mb-6"
+              />
               <p className="text-gray-400 mb-4">
-                e-commerce with modern UI, secure payment integration, and
-                customizable product inventory.
+                This project is a modern e-commerce platform built with a
+                responsive and visually appealing user interface. It includes
+                secure payment integration using gateways like Stripe or PayPal
+                to ensure safe transactions. The system supports a customizable
+                product inventory, allowing easy management of listings,
+                categories, and pricing. With user authentication, a functional
+                shopping cart, and a smooth checkout process, the platform
+                delivers a complete and reliable online shopping experience
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Next.js", "JavaScript", "React"].map((tech) => (
@@ -115,14 +124,6 @@ export const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
               </div>
             </div>
           </div>
