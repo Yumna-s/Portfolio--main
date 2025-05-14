@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 
@@ -14,17 +14,23 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
+        "service_ekjxfxq",
+        "template_3k4kegp",
+        formRef.current,
+        "XqDV5NZYRF2NYjqWm"
       )
       .then((result) => {
-        alert("Message Sent!");
+        console.log("EmailJS result:", result);
+        alert("Message Sent Successfully!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message. Please try again.");
+      });
   };
+
+  const formRef = useRef();
 
   return (
     <div>
@@ -38,7 +44,7 @@ export const Contact = () => {
               {" "}
               Get In Touch
             </h2>
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
               <div className="relative">
                 <input
                   type="text"
@@ -169,7 +175,7 @@ export const Contact = () => {
       <footer className="py-8 border-t border-white/10">
         <div className="container mx-auto px-6 text-center">
           <p className="text-white/50 text-sm">
-            © 2025 Fethiya Frontend Developer. All rights reserved.
+            © 2025 Fethiya Frontend Developer. All rights received.
           </p>
         </div>
       </footer>
