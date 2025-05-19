@@ -20,10 +20,29 @@ export const Home = () => {
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="#projects"
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
+              href="/Resume(1).pdf"
+              download
+              className="px-8 py-3 bg-transparent border border-white/30 text-white rounded-full text-base font-medium flex items-center group hover:border-blue-500/50 transition-colors"
             >
-              View Projects
+              <span className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-download mr-2 w-4 h-4 group-hover:translate-y-1 transition-transform"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" x2="12" y1="15" y2="3"></line>
+                </svg>
+                Download Resume
+              </span>
             </a>
 
             <a
